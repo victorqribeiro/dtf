@@ -8,7 +8,7 @@ Many times articles are exported as PDF files and submited to diferent jornals o
 
 ## The experiment
 
-Five articles ware written and exported to PDF, each one with a small difference.
+Five articles were written and exported to PDF, each one with a small difference.
 
 * **01-jpg-100.pdf** - was exported as a JPG file with 100% quality.
 
