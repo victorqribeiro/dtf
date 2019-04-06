@@ -4,7 +4,8 @@ Duplicate Thumbnail File - A mathod to indetify duplicate articles when doing a 
 
 ## The problem
 
-Many times articles are exported as PDF files and submited to diferent jornals or publications. The problem is, depending on how the PDF was exported, it will produce a different file, making it hard to check for duplicate files by looking at their hash.
+A systematic review could spawn countless articles, when running your search string on different data bases.
+Many times articles were exported as PDF files and submited to diferent jornals or publications. The problem is, depending on how the PDF was exported, it will produce a different file, making it hard to check for duplicates by looking at their hash.
 
 ## The experiment
 
@@ -34,7 +35,7 @@ According to the hash of each file, they're different from each other, when in f
 
 ## The solution
 
-And if instead of looking the hash of each file, we look to their thumbnail? It might work a little better.
+And what if instead of looking at the hash of each file, we look to their thumbnail? It might work a little better.
 
 So a python script was written to generate the thumbnail of each file and measure how different those thumbnails ware.
 
@@ -57,6 +58,6 @@ So, as we can see, there is 0.0 difference between them, so they must have the s
 
 ## Conclusion
 
-This experiment offers a diffent aproach to a common problem when doing systemic review, and in this particular case, it worked better. This method could be used alongside with other methods to indentify and exclude duplicate files.
+This experiment offers a diffent approach to a common problem when doing systemic review, and in this particular case, it worked better. This method could be used alongside with other methods to indentify and exclude duplicate files.
 
 The *dtf.py* script could be used as base to a more robust script that compares any files that could be compared visually.
