@@ -58,3 +58,5 @@ So, as we can see, there is 0.0 difference between them, so they must have the s
 ## Conclusion
 
 This experiment offers a diffent aproach to a common problem when doing systemic review, and in this particular case, it worked better. This method could be used alongside with other methods to indentify and exclude duplicate files.
+
+The *dtf.py* script could be used as base to a more robust script that compares any files that could be compared visually.
