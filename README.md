@@ -37,7 +37,7 @@ According to the hash of each file, they're different from each other, when in f
 
 ## The solution
 
-And what if instead of looking at the hash of each file, we look to their thumbnail? It might work a little better.
+And what if instead of looking at the hash of each file, we look at their thumbnail? It might work a little better.
 
 So a python script was written to generate the thumbnail of each file and measure how different those thumbnails ware.
 
