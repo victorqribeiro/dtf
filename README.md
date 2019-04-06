@@ -10,19 +10,19 @@ Many times articles are exported as PDF files and submited to diferent jornals o
 
 Five articles ware written and exported to PDF, each one with a small difference.
 
-01-jpg-100.pdf - was exported as a JPG file with 100% quality.
+* **01-jpg-100.pdf** - was exported as a JPG file with 100% quality.
 
-02-lossless.pdf - was exported as a LOSSLESS file.
+* **02-lossless.pdf** - was exported as a LOSSLESS file.
 
-03-lossless-2newlines.pdf - was exported as a LOSSLESS file with two new lines after the end of the document.
+* **03-lossless-2newlines.pdf** - was exported as a LOSSLESS file with two new lines after the end of the document.
 
-04-jpg-80-2newlines.pdf - was exported as a JPG file with 80% quality and two new lines after the end of the document.
+* **04-jpg-80-2newlines.pdf** - was exported as a JPG file with 80% quality and two new lines after the end of the document.
 
-05-jpg-80.pdf - was exported as a JPG file with 100% quality.
+* **05-jpg-80.pdf** - was exported as a JPG file with 100% quality.
 
 Let's look at their hash:
 
-| File | Hash |
+| Hash | File |
 | -- | -- |
 |1db6c720061004b740b87320f0d1d2a68bd9d312 | 01-jpg-100.pdf |
 |c9ecd0d02f04637ab81f8f383a74929d8a9f1a40 | 02-lossless.pdf |
