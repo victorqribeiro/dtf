@@ -38,7 +38,7 @@ except :
 	pass
 
 for f in paths :
-	os.system( "convert -thumbnail x150 -background white -alpha remove "+f+" "+tmpfolder+f.split('/')[-1][:-4]+".png 2> /dev/null" )
+	os.system( "convert -thumbnail '85x110>' \ -background white -gravity center -extent 75x100 -alpha off "+f+"[0] "+tmpfolder+f.split('/')[-1][:-4]+".png 2> /dev/null" )
 
 
 paths = []	
@@ -46,7 +46,8 @@ paths.extend(sorted(glob.glob(tmpfolder+"*.png")))
 
 img_addr = {}
 for i in paths :
-	img_addr[i] = np.array( Image.open(i) ).reshape(-1)
+	img = Image.open(i).convert('L')
+	img_addr[i] = np.array( img ).reshape(-1)
 
 keys = img_addr.keys()
 
