@@ -38,7 +38,7 @@ except :
 	pass
 
 for f in paths :
-	os.system( "convert -thumbnail '75x100>' \ -background white -gravity center -extent 75x100 -alpha off "+f+"[0] "+tmpfolder+f.split('/')[-1][:-4]+".png 2> /dev/null" )
+	os.system( 'convert -thumbnail "75x100>" -background white -gravity center -extent 75x100 -alpha off "'+f+'"[0] "'+tmpfolder+f.split('/')[-1][:-4]+'.png" 2> /dev/null' )
 
 
 paths = []	
@@ -50,9 +50,10 @@ for i in paths :
 	img_addr[i] = np.array( img ).reshape(-1)
 
 keys = img_addr.keys()
+keys.sort()
 
 for i in range(0, len(keys) ):
 	for j in range(i+1, len(keys) ):
 		print( keys[i].split('/')[-1], keys[j].split('/')[-1], distance( img_addr[ keys[i] ], img_addr[ keys[j] ] ) )
 
-os.system("rm -rfd "+	tmpfolder)
+os.system('rm -rfd "'+tmpfolder+'"')
